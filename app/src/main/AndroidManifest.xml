@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fullstack.umsa.parejas">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/roto"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SicaActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".ResultActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".FriendzoneActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".ParejasActivity"
+            android:theme="@style/MyTheme" />
+        <activity android:name=".ResultParejasActivity"
+            android:theme="@style/MyTheme" />
+    </application>
+
+</manifest>

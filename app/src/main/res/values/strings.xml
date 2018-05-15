@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">HeartBroken</string>
+    <string name="img_description">image</string>
+    <string name="sica">SICA</string>
+    <string name="friendzone">FRIENDZONE</string>
+    <string name="one_year">1 AÑO</string>
+    <string name="three_year">3 AÑOS</string>
+    <string name="send">enviar</string>
+    <string name="ok">entendido :(:</string>
+    <string name="text_one">Estas totalmente infectado del virus sica Sindrome de Inmensa Camoteria
+        Adquirida, los sintomas que seguramente tienes son: Ojos de borrego degollado, sudoracion en
+        las manos, pies, orejas y demas. Tembladera cuando ves a esa persona necesitas cada vez un
+        babero mas grande. Mas de seis materias aplazadas tambien vale.</string>
+    <string name="text_two">Potencialmente expuesto al Virus del SICA, suele presentarse pequeños tartamudeos
+        y ganas de ir al baño y fuertes dolores en la billetera cada vez que la ves.</string>
+    <string name="text_three">Frecuentes intervalo de sentir mariposas en el estomago y hambre. Sientes
+        extrañas ganas de bañarte cuando la ves y luego se te quitan esas ganas inmediatamente si ves un
+        playstation. Indecision total.</string>
+    <string name="text_four">Vacunado completamente. Ver a esa persona especial o ver un cactus es lo
+        mismo para ti. Pero no te preocupes, algun dia te enamoraras de verdad asi que anda ahorrando
+        porque sale caro.</string>
+    <string name="fz_one">
+        Bienvenido a la Friendzone, estas totalmente friendzonead@. Los sintomas que seguro tienes son
+        cansancio de ser el gato de tu chush, te duele la billetera y vives mas en su Facebook que en el tuyo.
+    </string>
+    <string name="fz_two">
+        Estas muy expuest@ a ser parte de la Friendzone, suele presentarse pequeñas incomodidades
+        cuando te dice "amig@" pocos dolores en la billetera y empiezas a hacer lo que te ordene.
+    </string>
+    <string name="fz_three">
+        Tienes algunos momentos de sentir dolores en la billetera, te da ganas de sonreirle cada
+        vez que la vez, tienes una baja probabilidad de estar en la Friendzone.
+    </string>
+    <string name="fz_four">
+        Estas libre de probabildad de estar en la Friendzone, mas bien ve a bañarte e invital@
+        a salir, no pierdas el tiempo ya muevete!!!
+    </string>
+
+
+    <string-array name="list_question_sica">
+        <item>1) Que sientes cuando ves a esa persona?</item>
+        <item>2) Que te atrae de esa persona?</item>
+        <item>3) Que le dedicarias a esa persona?</item>
+        <item>4) Que haces cuando estas solo?</item>
+        <item>5) Que pasa si te toca estudiar con esa persona en el mismo aula de clases?</item>
+        <item>6) Tratas de averiguar todo sobre esa persona?</item>
+    </string-array>
+
+    <string-array name="list_question_friend">
+        <item>1) Que sientes cuando tu crush te habla acerca de alguien que le gusta?</item>
+        <item>2) Te pide favores todo el tiempo?</item>
+        <item>3) Te pone apodos amistosos?</item>
+        <item>4) Se siente comodo(a) cerca de ti?</item>
+        <item>5) Estas al tanto de sus publicaciones de el/ella?</item>
+        <item>6) Cuando salen juntos quien paga?</item>
+    </string-array>
+    <string-array name="days">
+      <item>1</item><item>2</item><item>3</item><item>4</item><item>5</item>
+        <item>6</item><item>7</item><item>8</item><item>9</item><item>10</item>
+        <item>11</item><item>12</item><item>13</item><item>14</item><item>15</item>
+        <item>16</item><item>17</item><item>18</item><item>19</item><item>20</item>
+        <item>21</item><item>22</item><item>23</item><item>24</item><item>25</item>
+        <item>26</item><item>27</item><item>28</item><item>29</item><item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="months">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+    <string-array name="list_question_one_year">
+        <item>1) Aniversario </item>
+        <item>2) Mes del primer beso </item>
+        <item>3) Tú cumpleaños </item>
+        <item>4) Su cumpleaños </item>
+        <item>5) Veces que rompieron </item>
+        <item>6) Primer te amo </item>
+        <item>7) Mes en que se conocieron </item>
+    </string-array>
+    <string-array name="list_answer_sica">
+        <item>
+            a) Me siento mas perdido que los hijos de Ricky Martin en el Dia de las Madre.-
+            b) Siento que mi marcapasos se loquea y, lo peor, es que no tengo marcapasos.-
+            c) Sin querer, todos se enteran de mis caries por la sonrisa que me sale al verla.-
+            d) Solo veo bultos, debo ir al oculista mas seguido.
+        </item>
+        <item>
+            a) Su caracter: es la personificacion de la Madre Teresa, pero mas simpatica y 70 años menos.-
+            b) Su mirada: es mas tierna que hacerle el desayuno a mamá el dia de la madre (con la plata de uno mismo).-
+            c) Su alegria es contagiante. Trabaja de animador(a) infantil los fines de semana.-
+            d) (Hombres) Su cuerpo o (Mujeres) su ropa.
+        </item>
+        <item>
+            a) Me envolveria en papel de regalo y me mando por Courier.-
+            b) Poemas, canciones, mi examen de artes plasticas, la foto de portada de mi FB.-
+            c) El peluche que me regalo mi ex. Con esta crisis, todo es reciclable.-
+            d) Le regalo a mi hermano(a) menor. Y me quedo con su cuarto.
+        </item>
+        <item>
+            a) Me paso la tarde entera pensando en el o ella y cuando duermo ya estoy soñando que estoy pensando en el o ella.-
+            b) Escucho musica corta venas, lacrimogenas y mas tristes que la ultima navidad del chavo del 8.-
+            c) Escribo poemas y las revendo a mis amigos.-
+            d) No disponible. Estoy jugando PlayStation.
+        </item>
+        <item>
+            a) Empezaria a bañarme.-
+            b) Seria el peor año academico de mi vida. Es imposible estudiar con semejante distraccion.-
+            c) La invito a estudiar juntos despues de clases. En el peor de los casos hasta estudiaria.-
+            d) Que es estudiar?
+        </item>
+        <item>
+            a) Estoy llevando un curos de hacker profesional para saber sus contraseñas de internet.-
+            b) Solo lo intento de Lunes a Sabado. El domingo es un dia para la revision semanal de Muro de FB.-
+            c) Me conozco todo su vida. Cuando su mamá se olvida de su cumpleaños suele llamarme.-
+            d) Me acabo de enterar algunas cosas de ella, pretendo presentarsela al novio de mi hermana.
+        </item>
+    </string-array>
+
+    <string-array name="list_answer_friend">
+        <item>
+            a) Me siento mas furioso que Toreto en Rapidos y Furiosos en medio de una carrera.-
+            b) Siento que se me va a salir el campeon mundial en boxeo que llevo dentro.-
+            c) Todos creen que tengo problemas con el cuello porque por mas de que este hablando con mis amigos volteo a verla.-
+            d) Siento un escosor en la garganta debo de ir a comer mas seguido.
+        </item>
+        <item>
+            a) Te pide mas favores que a la Rosa de Guadalupe, en todos sus capitulos, y no hay tal rosa, eres tu quien hace todo.-
+            b) Te pide tantos favores amorosos, de vestir y musica que ya pareces su terapeuta.-
+            c) Te pide tantos favores que ya perdiste la cuenta de cuantas veces no te dijo gracias.-
+            d) Te pide favores que ni a su mejor amigo pediria.
+        </item>
+        <item>
+            a) Nose que seria de mi sin ti mi hermanito.-
+            b) Eres mi colega, mi mejor amigo.-
+            c) Siempre seras mi amigo, siempre.-
+            d) Eres la unica persona en quien confio.
+        </item>
+        <item>
+            a) Te abraza, te besa sin sentir nerviosismo, el unico emocionado eres tu.-
+            b) Te dice algo sin censurarse, o preguntarse como luce.-
+            c) No hace el esfuerzo de vestirse muy bien cuando sale contigo.-
+            d) Te da empujoncitos, sin medir su fuerza y sin importarle nada te grita.
+        </item>
+        <item>
+            a) Eres el/la unica que le da like minutos despues que lo publica en su FB.-
+            b) Eres quien le da me encanta con mas amor y azucar que Celia Cruz.-
+            c) Eres quien esta atento a cada foto con algun chico(a) que publico y lo investigas.-
+            d) Si alguien la etiqueta en una publicacion averiguas quienes son sus amigos.
+        </item>
+        <item>
+            a) Eres mas menso que Ludovico Peluche que terminas pagando cada cosa que quiere.-
+            b) No te importa gastar todo tu dinero para la semana.-
+            c) Pagas con tanta emocion que olvidas que tenias que pagar la luz y el agua.-
+            d) Lo que sea por esa linda carita.
+        </item>
+    </string-array>
+</resources>

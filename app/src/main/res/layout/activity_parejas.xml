@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:background="#e0f2f1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="3dp">
+
+            <TextView
+                android:id="@+id/text_question"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:padding="15dp"
+                tools:text="1. Que pasa si te toca estudiar con esa persona en el mismo aula de clases?"
+                android:textSize="21sp"
+                android:textColor="@android:color/black"
+                android:text="1)Aniversario"
+                android:textStyle="bold"/>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_margin="10dp">
+            <RelativeLayout
+                android:id="@+id/relativeLayoutDias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                >
+                <TextView
+                    android:id="@+id/textViewDias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dias"
+                    />
+                <ImageView
+                    android:id="@+id/imageViewDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDias"
+                    android:background="@drawable/ic_date_black_24dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinnerDia"
+                    android:layout_toRightOf="@+id/imageViewDate"
+                    android:layout_below="@+id/textViewDias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayoutMeses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_below="@+id/relativeLayoutDias"
+                >
+                <TextView
+                    android:id="@+id/textViewMeses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meses"
+                    />
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imageViewDate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewMeses"
+                    android:background="@drawable/ic_date_black_24dp"
+                    />
+                <Spinner
+                    android:id="@+id/spinnerMes"
+                    android:layout_toRightOf="@+id/imageViewDate2"
+                    android:layout_below="@+id/textViewMeses"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_send_one_year"
+                android:layout_width="wrap_content"
+                android:paddingStart="30dp"
+                android:drawablePadding="20dp"
+                android:paddingEnd="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/send"
+                android:drawableStart="@drawable/ic_send"
+                android:background="@drawable/bg_red_button"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

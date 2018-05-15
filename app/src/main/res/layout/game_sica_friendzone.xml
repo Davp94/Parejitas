@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#e0f2f1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="3dp">
+
+            <TextView
+                android:id="@+id/text_question"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:padding="15dp"
+                tools:text="1. Que pasa si te toca estudiar con esa persona en el mismo aula de clases?"
+                android:textSize="21sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/content_answers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer_one"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    tools:text="a) Su caracter: es la personificacion de la Madre Teresa, pero mas simpatica y 70 años menos.-" />
+
+                <RadioButton
+                    android:id="@+id/answer_two"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    tools:text="a) Su caracter: es la personificacion de la Madre Teresa, pero mas simpatica y 70 años menos.-" />
+
+                <RadioButton
+                    android:id="@+id/answer_three"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    tools:text="a) Su caracter: es la personificacion de la Madre Teresa, pero mas simpatica y 70 años menos.-" />
+
+                <RadioButton
+                    android:id="@+id/answer_four"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    tools:text="a) Su caracter: es la personificacion de la Madre Teresa, pero mas simpatica y 70 años menos.-" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_send_sica"
+                android:layout_width="wrap_content"
+                android:paddingStart="30dp"
+                android:drawablePadding="20dp"
+                android:paddingEnd="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/send"
+                android:drawableStart="@drawable/ic_send"
+                android:background="@drawable/bg_red_button"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
