@@ -1,20 +1,236 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_end_color"
     android:orientation="vertical"
+    android:paddingTop="35dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     tools:context=".ResultParejasActivity">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/textViewQuestion1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Aca desplegar los resultados en Layouts Dinamicos"
-            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="AppName"
+            android:background="#F2DEDF"
+            />
+        <TextView
+            android:id="@+id/textViewAnswer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="#c6c6c6"
+            android:text="lorem fdsfsdvdsvsdv"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:id="@+id/textViewQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="AppName"
+            android:background="#D7EEF6"
+            />
+        <TextView
+            android:id="@+id/textViewAnswer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="#c6c6c6"
+            android:text="lorem fdsfsdvdsvsdv"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:id="@+id/textViewQuestion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="AppName"
+            android:background="#F2DEDF"
+            />
+        <TextView
+            android:id="@+id/textViewAnswer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="#c6c6c6"
+            android:text="lorem fdsfsdvdsvsdv"
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:id="@+id/textViewQuestion4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="AppName"
+            android:background="#D7EEF6"
+            />
+        <TextView
+            android:id="@+id/textViewAnswer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="#c6c6c6"
+            android:text="lorem fdsfsdvdsvsdv"
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:id="@+id/textViewQuestion5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="AppName"
+            android:background="#F2DEDF"
+            />
+        <TextView
+            android:id="@+id/textViewAnswer5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="#c6c6c6"
+            android:text="lorem fdsfsdvdsvsdv"
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:id="@+id/textViewQuestion6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="AppName"
+            android:background="#D7EEF6"
+            />
+        <TextView
+            android:id="@+id/textViewAnswer6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="#c6c6c6"
+            android:text="lorem fdsfsdvdsvsdv"
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:id="@+id/textViewQuestion7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="AppName"
+            android:background="#F2DEDF"
+            />
+        <TextView
+            android:id="@+id/textViewAnswer7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="#c6c6c6"
+            android:text="lorem fdsfsdvdsvsdv"
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:id="@+id/textViewQuestion8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="AppName"
+            android:background="#D7EEF6"
+            />
+        <TextView
+            android:id="@+id/textViewAnswer8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="#c6c6c6"
+            android:text="lorem fdsfsdvdsvsdv"
+            />
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnEntendido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entendido"
+            android:background="#F2DEDF"
+            android:gravity="center"
+            android:layout_margin="20dp"
             />
 
-
-
 </LinearLayout>
+</ScrollView>

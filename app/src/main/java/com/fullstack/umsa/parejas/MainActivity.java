@@ -1,6 +1,8 @@
 package com.fullstack.umsa.parejas;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -37,21 +39,39 @@ public class MainActivity extends Activity implements View.OnClickListener{
             case R.id.btn_sica:
                 Intent i = new Intent(this, SicaActivity.class);
                 startActivity(i);
-                finish();
                 break;
             case R.id.btn_friendzone:
                 Intent a = new Intent(this, FriendzoneActivity.class);
                 startActivity(a);
-                finish();
                 break;
             case R.id.btn_one_year:
                 Intent p= new Intent(this, ParejasActivity.class);
                 startActivity(p);
-                finish();
                 break;
             case R.id.btn_three_year:
-                Toast.makeText(this, "En desarrollo", Toast.LENGTH_SHORT).show();
+                Intent pp= new Intent(this, ParejasSeniorActivity.class);
+                startActivity(pp);
                 break;
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Salir");
+        builder.setMessage("Desea salir del juego?");
+        builder.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                 finish();
+            }
+        });
+        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        builder.show();
     }
 }

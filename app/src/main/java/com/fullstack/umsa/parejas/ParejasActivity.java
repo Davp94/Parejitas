@@ -1,11 +1,19 @@
 package com.fullstack.umsa.parejas;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -26,9 +34,14 @@ public class ParejasActivity extends AppCompatActivity {
 
         final Spinner spinnerDia=findViewById(R.id.spinnerDia);
         final Spinner spinnerMes=findViewById(R.id.spinnerMes);
-        Button btnNext=findViewById(R.id.btn_send_one_year);
+        final Button btnNext=findViewById(R.id.btn_send_one_year);
         final RelativeLayout relativeDias=findViewById(R.id.relativeLayoutDias);
         final RelativeLayout relativeMeses=findViewById(R.id.relativeLayoutMeses);
+        final TextView textDias=findViewById(R.id.textViewDias);
+        final LinearLayout linear=findViewById(R.id.linearLayoutInput);
+        final EditText editInput=findViewById(R.id.editTextInput);
+        final ImageView image=findViewById(R.id.imgP);
+        final TextView txtBases=findViewById(R.id.aboutBases);
 
         ArrayAdapter<CharSequence> adapterDia=ArrayAdapter
                 .createFromResource(this,R.array.days,android.R.layout.simple_spinner_item);
@@ -47,35 +60,88 @@ public class ParejasActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (cont==0)
                 {
-                    resultados.put(cont,spinnerDia.getSelectedItem().toString()+"-"+spinnerMes.getSelectedItem().toString());
+
+                   resultados.put(cont,spinnerDia.getSelectedItem().toString()+"-"+spinnerMes.getSelectedItem().toString());
+
                 }
 
-                if(cont<6)
+                if(cont<7)
                 {
                     cont++;
-                    txtQuestion.setText(questionsParejas[cont]);
+
+                        txtQuestion.setText(questionsParejas[cont]);
+
+
                     switch (cont)
                     {
-                        case 1:  case 5:
+                        case 1:
                             resultados.put(cont,spinnerMes.getSelectedItem().toString());
-                            relativeDias.setVisibility(View.INVISIBLE);
+                            image.setBackgroundResource(R.drawable.beso);
+                            textDias.setText("Dias");
+                            relativeDias.setVisibility(View.GONE);
                             relativeMeses.setVisibility(View.VISIBLE);
                             break;
-                        case 2: case 3:
+                        case 2:
+                            resultados.put(cont,spinnerMes.getSelectedItem().toString());
+
+                            relativeDias.setVisibility(View.VISIBLE);
+                            image.setBackgroundResource(R.drawable.cumpleanos);
+                            break;
+                        case 3:
                             resultados.put(cont,spinnerDia.getSelectedItem().toString()+"-"+spinnerMes.getSelectedItem().toString());
+
                             relativeDias.setVisibility(View.VISIBLE);
                             break;
                         case 4:
-                            resultados.put(cont,spinnerDia.getSelectedItem().toString());
-                            relativeMeses.setVisibility(View.INVISIBLE);
+                            resultados.put(cont,spinnerDia.getSelectedItem().toString()+"-"+spinnerMes.getSelectedItem().toString());
+
+                            textDias.setText("Veces");
+                            relativeMeses.setVisibility(View.GONE);
+                            image.setBackgroundResource(R.drawable.romper);
                             break;
+                        case 5:
+                            resultados.put(cont,spinnerDia.getSelectedItem().toString());
+
+                            textDias.setText("Dias");
+                            relativeDias.setVisibility(View.GONE);
+                            image.setBackgroundResource(R.drawable.te_amo);
+                            relativeMeses.setVisibility(View.VISIBLE);
+                            break;
+                        case 6:
+                            resultados.put(cont,spinnerMes.getSelectedItem().toString());
+                            relativeDias.setVisibility(View.GONE);
+                            image.setBackgroundResource(R.drawable.fecha);
+                            relativeMeses.setVisibility(View.VISIBLE);
+                            break;
+
+                        case 7:
+                            resultados.put(cont,spinnerMes.getSelectedItem().toString());
+
+                            relativeDias.setVisibility(View.GONE);
+                            relativeMeses.setVisibility(View.GONE);
+                            image.setBackgroundResource(R.drawable.emoticono);
+                            linear.setVisibility(View.VISIBLE);
+                            txtBases.setVisibility(View.VISIBLE);
+                            txtBases.setText(Html.fromHtml(getResources().getString(R.string.aboutBases)));
+                            txtBases.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    Uri uri=Uri.parse("https://es.wikipedia.org/wiki/Met%C3%A1foras_de_b%C3%A9isbol_para_el_sexo");
+                                    Intent intent=new Intent(Intent.ACTION_VIEW,uri);
+                                    startActivity(intent);
+                                }
+                            });
+                            break;
+
                     }
 
 
+
                 }else{
-                    resultados.put(cont,spinnerMes.getSelectedItem().toString());
+
+                    resultados.put(cont+1,editInput.getText().toString());
                     Intent i = new Intent(ParejasActivity.this, ResultParejasActivity.class);
-                    i.putExtra("nameJuego","one_year");
+                    i.putExtra("nameJuego","1_year");
                     for (Map.Entry<Integer, String> entry : resultados.entrySet()) {
                         i.putExtra(String.valueOf(entry.getKey()),entry.getValue());
                     }
@@ -85,4 +151,23 @@ public class ParejasActivity extends AppCompatActivity {
             }
         });
     }
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Volver");
+        builder.setMessage("Desea volver al menu principal? se perderan los datos actuales");
+        builder.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        builder.show();
+    }
+
 }

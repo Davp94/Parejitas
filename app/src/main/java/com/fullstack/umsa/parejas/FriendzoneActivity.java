@@ -1,5 +1,7 @@
 package com.fullstack.umsa.parejas;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -69,5 +71,23 @@ public class FriendzoneActivity extends AppCompatActivity {
         if (opThree.isChecked()) return 5;
         if (opFour.isChecked()) return 1;
         return 0;
+    }
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Volver");
+        builder.setMessage("Desea volver al menu principal? se perderan los datos actuales");
+        builder.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        builder.show();
     }
 }

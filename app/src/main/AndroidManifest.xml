@@ -30,8 +30,12 @@
         <activity
             android:name=".ParejasActivity"
             android:theme="@style/MyTheme" />
-        <activity android:name=".ResultParejasActivity"
+        <activity
+            android:name=".ResultParejasActivity"
             android:theme="@style/MyTheme" />
+        <activity android:name=".ParejasSeniorActivity"
+            android:theme="@style/MyTheme"
+            />
     </application>
 
 </manifest>

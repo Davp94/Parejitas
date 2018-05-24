@@ -66,7 +66,7 @@ public class ResultActivity extends AppCompatActivity implements Response.Listen
         return m;
     }
     private void registrarJuego(){
-        String url="http://192.168.48.1/proyecto_parejitas/conexion.php?tipo="+
+        String url="http://esertec61.000webhostapp.com/onePlaye.php?tipo="+
                     tipo+"&puntaje="+Integer.parseInt(point);
         url=url.replace(" ","&20");
         JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.GET,url,null,this,this);
